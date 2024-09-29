@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign In | Login To Your Account</title>
+        <link rel="stylesheet" href="/css/login.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="login">
+                <h3>Login Now</h3>
+                <span id="message" class="error"></span>
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Enter Admin Email"
+                    required="true"
+                />
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="Enter Admin Password"
+                    required="true"
+                />
+                <button class="login-btn">
+                    <div class="loader"></div>
+                    Login Now
+                </button>
+                <span>Don't Have Account? <a href="/signup">Signup</a></span>
+            </div>
+        </div>
+        <script src="/js/login.js"></script>
+    </body>
+</html>

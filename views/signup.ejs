@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up | Create Your New  Account</title>
+        <link rel="stylesheet" href="/css/login.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="login">
+                <h3>Create Account</h3>
+                <span id="message" class="error"></span>
+               <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter User Name"
+                    required="true"
+                />
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Enter Your Email"
+                    required="true"
+                />
+                <input
+                    id="phone"
+                    type="tel"
+                    placeholder="Enter Your Phone"
+                    required="true"
+                />
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="Enter A Password"
+                    required="true"
+                />
+                <button class="login-btn">
+                    <div class="loader"></div>
+                    Register Now
+                </button>
+                <span>Already Have Account? <a href="/login">Login</a></span>
+            </div>
+        </div>
+        <script src="/js/signup.js"></script>
+    </body>
+</html>

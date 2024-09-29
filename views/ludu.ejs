@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ludo-king | Designed By Ghs Julian</title>
+        <meta
+            name="description"
+            content="Hire Ghs Julian, a seasoned web developer with expertise in JavaScript, HTML, CSS, and more. Explore my portfolio and let's build something amazing together!"
+        />
+        <meta
+            name="keywords"
+            content="Ghs Julian, web developer, JavaScript developer, HTML, CSS, web development, portfolio, hire a developer"
+        />
+        <!-- Open Graph Protocol meta tags -->
+        <meta
+            property="og:title"
+            content="Ghs Julian - Expert Web Developer | JavaScript, HTML, CSS & More"
+        />
+        <meta
+            property="og:description"
+            content="Hire Ghs Julian, a seasoned web developer with expertise in JavaScript, HTML, CSS, and more. Explore my portfolio and let's build something amazing together!"
+        />
+        <meta property="og:image" content="/images/ghs_julian.png" />
+        <meta property="og:url" content="https://ghsresume.netlify.app" />
+        <meta property="og:type" content="website" />
+        <!-- Twitter meta tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Ghs Julian - Expert Web Developer | JavaScript, HTML, CSS & More"
+        />
+        <meta
+            name="twitter:description"
+            content="Hire Ghs Julian, a seasoned web developer with expertise in JavaScript, HTML, CSS, and more. Explore my portfolio and let's build something amazing together!"
+        />
+        <meta name="twitter:image" content="https://example.com/image.jpg" />
+        <!-- Viewport meta tag for responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/layouts.css" />
+        <link rel="stylesheet" href="/css/Ludu.css" />
+    </head>
+    <body>
+<%- include("./layouts/header.ejs") %>
+<main>
+            <div class="ludo-container">
+                <h3>Alexander<span>VS</span>Ghs Julian</h3>
+                <div class="ludo">
+                    <div class="player-pieces">
+                        <div
+                            class="player-piece"
+                            player-id="P1"
+                            piece="0"
+                        ></div>
+                        <div
+                            class="player-piece"
+                            player-id="P1"
+                            piece="1"
+                        ></div>
+                        <div
+                            class="player-piece"
+                            player-id="P1"
+                            piece="2"
+                        ></div>
+                        <div
+                            class="player-piece"
+                            player-id="P1"
+                            piece="3"
+                        ></div>
+
+                        <div
+                            class="player-piece"
+                            player-id="P2"
+                            piece="0"
+                        ></div>
+                        <div
+                            class="player-piece"
+                            player-id="P2"
+                            piece="1"
+                        ></div>
+                        <div
+                            class="player-piece"
+                            player-id="P2"
+                            piece="2"
+                        ></div>
+                        <div
+                            class="player-piece"
+                            player-id="P2"
+                            piece="3"
+                        ></div>
+                    </div>
+
+                    <div class="player-bases">
+                        <div class="player-base" player-id="P1"></div>
+                        <div class="player-base" player-id="P2"></div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="row">
+                        <div class="dice-value"></div>
+                        <button id="reset-btn" class="btn btn-reset">
+                            Reset
+                        </button>
+                        <button id="dice-btn" class="btn btn-dice">Roll</button>
+                    </div>
+                    <h2 class="active-player">Active Player: <span></span></h2>
+                </div>
+            </div>
+        </main>
+        <script src="/js/main.js" type="module"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/socket.io.js"></script>
+        <script src="/js/menu.js"></script>
+    </body>
+</html>

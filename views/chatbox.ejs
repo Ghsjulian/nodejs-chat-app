@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link
+            href="vendor/bootstrap-icons/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+        <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+        <link href="vendor/remixicon/remixicon.css" rel="stylesheet" />
+        <title>Chat App - Created By Ghs Julian</title>
+    </head>
+    <body>
+        <div id="root">
+            <div class="app">
+                <header>
+                    <div class="logo">
+                        <h3>Chat-App</h3>
+                    </div>
+                    <div id="nav" class="links">
+                        <a href="#"><i class="bi bi-house"></i></a>
+                        <a href="#"><i class="bi bi-person"></i></a>
+                        <a href="#"> <i class="bi bi-chat"></i></a>
+                        <a href="#">
+                            <i class="ri ri-logout-circle-r-line"></i
+                        ></a>
+                    </div>
+                    <div class="action">
+                        <button class="nav-btn">
+                            <i
+                                id="side-bar"
+                                class="bi bi-layout-text-sidebar"
+                            ></i>
+                        </button>
+                        <button class="settings">
+                            <i id="settings" class="bi bi-justify"></i>
+                        </button>
+                    </div>
+                </header>
+                <aside>
+                    <h3>Active Peoples</h3>
+                    <div class="search-area">
+                        <input type="text" placeholder="Search..." />
+                        <button><i class="bi bi-search"></i></button>
+                    </div>
+                    <div id="active-users" class="links">
+                        <a href="#">
+                            <img src="/icons/user.png" />
+                            <span>Ghs Julian</span>
+                        </a>
+                       
+                    </div>
+                </aside>
+                <main class="chatbox">
+                    <div class="message left">
+                        <p>Hello how are you</p>
+                        <span>2:30PM</span>
+                    </div>
+                    <div class="message right">
+                        <p>
+                            Hello how are you Whatsapp kun pagol chalai na na na
+                            na na na na na na na na na
+                        </p>
+                        <span>2:30PM</span>
+                    </div>
+                    
+                </main>
+                <footer>
+                    <div class="box">
+                        <input
+                            type="text"
+                            id="message"
+                            placeholder="Type A Message..."
+                        />
+                        <button class="send"><i class="bi bi-send"></i></button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
